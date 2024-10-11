@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Dante's Coolness</title>
+  <title>Dante: A Dynamic Leader</title>
   <style>
-    /* Add your custom CSS styles here */
+    /* Global styles */
     body {
-      background-color: #f0f0f0;
+      font-family: Arial, sans-serif;
       text-align: center;
     }
+
+    /* Animations */
     h1 {
       animation: bounce 2s infinite;
     }
@@ -22,16 +24,58 @@
         transform: translateY(0);
       }
     }
+
+    .project-card {
+      animation: slideInLeft 1s ease-in-out;
+    }
+    @keyframes slideInLeft {
+      0% {
+        transform: translateX(-100%);
+      }
+      100% {
+        transform: translateX(0);
+      }
+    }
+
+    /* Section styles */
+    .section {
+      margin: 20px;
+    }
   </style>
 </head>
 <body>
-  <h1>Dante: The Coolest Person Ever!</h1>
-  <p>Check out these cool animations!</p>
-  <div id="animation-container">
+  <h1>Dante: A Dynamic Leader</h1>
+
+  <section class="section">
+    <h2>About Me</h2>
+    <p>I'm a skilled manager with a passion for problem-solving. I'm known for my ability to prioritize tasks and effectively lead teams.</p>
+  </section>
+
+  <section class="section">
+    <h2>Projects</h2>
+    <div class="project-card">
+      <h3>Project 1: Successful Team Leadership</h3>
+      <p>Led a team of [number] to [achieve a goal]. Successfully managed [challenges] and maintained a positive team environment.</p>
     </div>
+    <div class="project-card">
+      <h3>Project 2: Innovative Problem Solving</h3>
+      <p>Developed creative solutions to [complex problem]. Demonstrated strong analytical and critical thinking skills.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>Contact</h2>
+    <p>Email: dante@example.com</p>
+    <p>Phone: (123) 456-7890</p>
+  </section>
+
+  <section class="section">
+    <a href="https://plshl.github.io/mytestwebsite/ogcode.html">View Original Code</a>
+  </section>
+
   <script>
-    // JavaScript for more complex animations
-    // ...
+    // Add more JavaScript for interactive elements
+    // For example, you could use a library like GSAP for more complex animations
   </script>
 </body>
 </html>
